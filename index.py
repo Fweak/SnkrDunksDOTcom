@@ -68,7 +68,7 @@ class SnkrDunk:
 
         if "Your email verification has been confirmed" in response.text:
             self._save_accounts.write(
-                f"{self.mailer.email}:{self.username}:{self.password}:{time.time()}"
+                f"{self.mailer.email}:{self.username}:{self.password}:{time.time()}\n"
             )
         
 
